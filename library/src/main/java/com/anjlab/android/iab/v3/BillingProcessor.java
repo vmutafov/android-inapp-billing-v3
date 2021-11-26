@@ -1109,7 +1109,7 @@ public class BillingProcessor extends BillingBase
 	{
 		if (listener != null && handler != null)
 		{
-			handler.post(() -> listener.onSkuDetailsResponse(products));
+			listener.onSkuDetailsResponse(products);
 		}
 	}
 
